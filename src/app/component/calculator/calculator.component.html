@@ -1,0 +1,41 @@
+<div class="component-container">
+    <h2>Mortgage Calculator</h2>
+    <form action="">
+        <button type="button">Clear All</button>
+        <div class="form-contol">
+            <p class="input-title">Mortgage Amount</p>
+            <div class="input-group">
+                <span class="input-group-text input-group-text-start">£</span>
+                <input type="text" name="amount" id="amount" class="input-text input-text-end">
+            </div>
+        </div>
+        <div class="form-contol">
+            <p class="input-title">Mortgage Term</p>
+            <div class="input-group">
+                <span class="input-group-text input-group-text-end">years</span>
+                <input type="text" name="term" id="term" class="input-text input-text-start"> 
+            </div>
+        </div>
+        <div class="form-contol">
+            <p class="input-title">Interest Rate</p>
+            <div class="input-group">
+                <span class="input-group-text input-group-text-end">%</span>
+                <input type="text" name="rate" id="rate" class="input-text input-text-start"> 
+            </div>
+        </div>
+        <div class="form-contol">
+            <p class="input-title">Mortage Type</p>
+            <div class="input-group-radio">
+                <input type="radio" name="mortage-type" id="mortage-type-repayement" class="input-radio">
+                <label class="input-radio-label" for="mortage-type-repayement">Repayement</label>
+            </div>
+            <div class="input-group-radio">
+                <input type="radio" name="mortage-type" id="mortage-type-interest" class="input-radio">
+                <label class="input-radio-label" for="mortage-type-interest">Interest Only</label>
+            </div>
+        </div>
+        <button type="submit">
+            Calculate Repayements
+        </button>
+    </form>
+</div>
