@@ -1,0 +1,16 @@
+.container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    max-width: 688px;
+    background-color: chocolate;
+}
+
+@media(min-width: 1440px){
+    .container{
+        display: flex;
+        max-width: 1008px;
+    }
+}
