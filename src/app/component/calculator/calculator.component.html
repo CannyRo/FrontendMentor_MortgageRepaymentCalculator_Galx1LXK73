@@ -1,7 +1,9 @@
 <div class="component-container">
-    <h2>Mortgage Calculator</h2>
-    <form action="">
-        <button type="button">Clear All</button>
+    <div class="component-header">
+        <h2 class="title">Mortgage Calculator</h2>
+        <button type="button" class="btn-link">Clear All</button>
+    </div>
+    <form action="" class="form-container">
         <div class="form-contol">
             <p class="input-title">Mortgage Amount</p>
             <div class="input-group">
@@ -9,33 +11,40 @@
                 <input type="text" name="amount" id="amount" class="input-text input-text-end">
             </div>
         </div>
-        <div class="form-contol">
-            <p class="input-title">Mortgage Term</p>
-            <div class="input-group">
-                <span class="input-group-text input-group-text-end">years</span>
-                <input type="text" name="term" id="term" class="input-text input-text-start"> 
+        <div class="form-subcontainer">
+            <div class="form-contol">
+                <p class="input-title">Mortgage Term</p>
+                <div class="input-group">
+                    <span class="input-group-text input-group-text-end">years</span>
+                    <input type="text" name="term" id="term" class="input-text input-text-start">
+                </div>
+            </div>
+            <div class="form-contol">
+                <p class="input-title">Interest Rate</p>
+                <div class="input-group">
+                    <span class="input-group-text input-group-text-end">%</span>
+                    <input type="text" name="rate" id="rate" class="input-text input-text-start">
+                </div>
             </div>
         </div>
-        <div class="form-contol">
-            <p class="input-title">Interest Rate</p>
-            <div class="input-group">
-                <span class="input-group-text input-group-text-end">%</span>
-                <input type="text" name="rate" id="rate" class="input-text input-text-start"> 
-            </div>
-        </div>
+
         <div class="form-contol">
             <p class="input-title">Mortage Type</p>
             <div class="input-group-radio">
-                <input type="radio" name="mortage-type" id="mortage-type-repayement" class="input-radio">
-                <label class="input-radio-label" for="mortage-type-repayement">Repayement</label>
+                <input type="radio" name="mortage-type" id="mortage-type-repayement" class="input-radio" checked>
+                <label class="input-radio-label" for="mortage-type-repayement">Repayment</label>
             </div>
             <div class="input-group-radio">
                 <input type="radio" name="mortage-type" id="mortage-type-interest" class="input-radio">
                 <label class="input-radio-label" for="mortage-type-interest">Interest Only</label>
             </div>
         </div>
-        <button type="submit">
-            Calculate Repayements
+        <button type="submit" class="btn-submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M18.75 2.25H5.25a1.5 1.5 0 0 0-1.5 1.5v16.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V3.75a1.5 1.5 0 0 0-1.5-1.5Zm-10.5 16.5a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 18.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM12 15a1.125 1.125 0 1 1 0-2.25A1.125 1.125 0 0 1 12 15Zm3.75 3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm0-3.75a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm1.5-5.25a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V6a.75.75 0 0 1 .75-.75h9a.75.75 0 0 1 .75.75v3.75Z" />
+            </svg>
+            Calculate Repayments
         </button>
     </form>
 </div>
