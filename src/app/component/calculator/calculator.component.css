@@ -30,7 +30,7 @@
 .btn-link:hover, .btn-link:focus-visible, .btn-link:focus, .btn-link:active{
     color: var(--Slate-900);
 }
-.form-container{
+.form-container, .form-subcontainer{
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 100%;
 }
 .input-title{
     font-size: 16px;
@@ -151,4 +152,28 @@
 }
 .btn-submit:hover, .btn-submit:focus-visible, .btn-submit:focus, .btn-submit:active{
     background-color: var(--Lime-alfa-50);
+}
+@media(min-width: 768px){
+    .component-container{
+        padding: 40px;
+    }
+    .component-header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 40px;
+    }
+    .form-subcontainer{
+        flex-direction: row;
+    }
+    .btn-submit{
+        margin-top: 16px;
+        max-width: 314px;
+    }
+}
+@media(min-width: 1440px){
+    :host{
+        width: 100%;
+    }
 }
